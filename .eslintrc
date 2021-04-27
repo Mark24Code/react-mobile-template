@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "standard-react",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "semi": "off",
+    "space-before-function-paren": "off",
+    "react/react-in-jsx-scope": "off",
+    "eol-last": "off",
+    "comma-dangle": [
+      "error",
+      "only-multiline"
+    ]
+  },
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "jest/globals": true
+  }
+}

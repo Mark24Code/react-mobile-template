@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+    "rules": {
+    "block-no-empty": null,
+    "unit-allowed-list": ["deg","vw","vh", "vm","rem", "px", "%"],
+    "no-descending-specificity": null
+  }
+}

@@ -1,0 +1,24 @@
+.error-page {
+  text-align: center;
+
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.85);
+    padding-top: 213px;
+    margin-bottom: 12px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+  }
+
+  .retry {
+    font-size: 16px;
+    line-height: 24px;
+    color: #15C5CE;
+  }
+}

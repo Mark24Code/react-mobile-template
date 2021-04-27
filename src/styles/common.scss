@@ -1,0 +1,42 @@
+@import './reset.scss';
+
+
+html,body {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(35,37,46);
+  color: #fff;
+
+  // 全局字体
+  font-family: -apple-system,PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;
+
+  // 禁止本文交互
+  -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+
+
+  @media screen and (min-width: 414px) {
+    #root {
+      margin: 0 auto;
+      width: 414px;
+    }
+  }
+
+}
+
+// 设置全局的CSS样式，避免图中的长按弹出菜单与选中文本的行为
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+
+
+// iphone safe area
+// https://jelly.jd.com/article/6006b1055b6c6a01506c87fd
+
+
+@supports (bottom: constant(safe-area-inset-bottom)) or (bottom: env(safe-area-inset-bottom)) { 
+    .bottom-button {
+        margin-bottom: constant(safe-area-inset-bottom);
+        margin-bottom: env(safe-area-inset-bottom);  
+    }
+}
